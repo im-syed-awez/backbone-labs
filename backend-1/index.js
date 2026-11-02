@@ -15,4 +15,4 @@ const myServer = http.createServer((req, res) => {
 // we have to provide a port no. to our server to listen the incoming req and send the res. with the help of listen(). If the is listening on that port then display a msg to confirm 
 myServer.listen(8000, () => console.log("Server is running on http://localhost:8000"));
 
-// It is a good habbit to create a start script in p.json under scripts: "start": "node name_of_exe_file"
+// It is a good habbit to create a start script in p.json under scripts: "start": "node name_of_file"
