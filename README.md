@@ -6,6 +6,7 @@ Welcome to my backend development learning repository. This repo tracks my journ
 
 *   [backend-1](./backend-1/) — Native Node.js Server & Core HTTP Module
 *   [backend-2](./backend-2/) — Intro to Express.js, API, REST-api, Basic Routing, and Env Management
+*   [backend-3](./backend-3/) — MVC (Model-View-Controller) folder structure to connect an Express application to MongoDB and handle resource creation
 
 ---
 
@@ -44,6 +45,28 @@ Migrated from native modules to the Express.js framework to build a structured, 
 #### How to Run:
 ```bash
 cd backend-2
+npm install
+npm run dev
+```
+---
+
+### 3. Backend-3: MVC Architecture & MongoDB Integration
+Implemented an industry-standard MVC (Model-View-Controller) folder structure to connect an Express application to MongoDB and handle resource creation.
+
+#### Core Concepts Learned:
+*   **MVC Architecture:** A design pattern that separates an application into three main components: Models (data structure), Views (user interface/responses), and Controllers (business logic).
+*   **Mongoose ODM:** An Object Data Modeling library for MongoDB and Node.js that manages data relationships, provides schema validation, and translates between code objects and database documents.
+
+#### What I Did:
+*   **Database Connectivity (`config/db.js`):** Set up a secure, asynchronous connection utility to link the application with a MongoDB instance using environmental URI variables.
+*   **Data Modeling (`model/account.model.js`):** Structured an `accountSchema` defining data rules for system users (`name`, `email`, `phone`, `password`) and compiled it into a usable Mongoose model.
+*   **Business Logic Layer (`controller/account.controller.js`):** Developed an asynchronous `createAccount` handler implementing robust `try/catch` blocks to parse, store, and return JSON responses for new user requests.
+*   **Routing System (`routes/account.route.js`):** Configured modular Express routing using an explicit HTTP `POST` method mapped to the creation controller logic.
+*   **Server Bootstrapping (`app.js`):** Structured the primary entry point using global JSON parsing middleware (`express.json()`), initialized version-controlled API prefixes (`/api/v1/accounts`), and triggered the database handshake alongside port bindings.
+
+#### How to Run:
+```bash
+cd backend-3
 npm install
 npm run dev
 ```

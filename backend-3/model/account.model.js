@@ -1,10 +1,12 @@
 import mongoose from "mongoose";
 
-const accountSchema = mongoose.Schema({
+// how should a account look like.
+const accountSchema = new mongoose.Schema({
     name: String,
     email: String,
     phone: Number,
     password: String
 });
 
+//giving a name to the schema
 export const Account = mongoose.model("Account", accountSchema);
