@@ -6,7 +6,7 @@ Welcome to my backend development learning repository. This repo tracks my journ
 
 *   [backend-1](./backend-1/) — Native Node.js Server & Core HTTP Module
 *   [backend-2](./backend-2/) — Intro to Express.js, API, REST-api, Basic Routing, and Env Management
-*   [backend-3](./backend-3/) — MVC (Model-View-Controller) folder structure to connect an Express application to MongoDB and handle resource creation
+*   [backend-3](./backend-3/) — Intro to MVC (Model-View-Controller) and MongoDB Integration 
 
 ---
 
@@ -70,4 +70,6 @@ cd backend-3
 npm install
 npm run dev
 ```
+---
+
 
