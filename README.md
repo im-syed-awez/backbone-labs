@@ -7,6 +7,8 @@ Welcome to my backend development learning repository. This repo tracks my journ
 *   [backend-1](./backend-1/) — Native Node.js Server & Core HTTP Module
 *   [backend-2](./backend-2/) — Intro to Express.js, API, REST-api, Basic Routing, and Env Management
 *   [backend-3](./backend-3/) — Intro to MVC (Model-View-Controller) and MongoDB Integration 
+*   [backend-4](./backend-4/) — Complete Product CRUD Operations
+
 
 ---
 
@@ -71,5 +73,27 @@ npm install
 npm run dev
 ```
 ---
+### 4. Backend-4: Complete Product CRUD Operations
+Expanded the MVC backend structure to perform full Create, Read, Update, and Delete (CRUD) operations for a product inventory using MongoDB.
+
+#### Core Concepts Learned:
+*   **CRUD Operations:** The four basic functions of persistent storage: Create, Read, Update, and Delete.
+*   **Dynamic Route Parameters (`req.params`):** Extracting unique identifiers (like a product ID) directly from the URL to look up or modify a specific database item.
+*   **Mongoose Query Methods:** Built-in helper functions (`find()`, `findById()`, `findByIdAndUpdate()`, `findByIdAndDelete()`) used to simplify database interactions.
+
+#### What I Did:
+*   **Created Product Schema (`model/product.model.js`):** Defined the structure for product entries including name, price, details, and category.
+*   **Fetched All Products (`handleGetAllProducts`):** Used `Product.find()` to pull every item from the database and return them in a single JSON response.
+*   **Fetched Single Product (`handleGetProductById`):** Extracted the ID from the URL (`req.params.id`) to look up and return one specific product.
+*   **Updated Product Details (`handleUpdateById`):** Combined URL IDs with incoming body data to find a product, overwrite its fields, and save the changes.
+*   **Deleted Products (`handleDeleteById`):** Removed specific items permanently from the database using their unique ID.
+
+#### How to Run:
+```bash
+cd backend-4
+npm install
+npm run dev
+```
+
 
 
