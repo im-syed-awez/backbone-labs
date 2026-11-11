@@ -8,5 +8,5 @@ const accountSchema = new mongoose.Schema({
     password: String
 });
 
-//giving a name to the schema
+//giving a name to the Model
 export const Account = mongoose.model("Account", accountSchema);
