@@ -21,14 +21,4 @@ router.route("/update/:id").put(handleUpdateById);
 
 router.route("/delete/:id").delete(handleDeleteById);
 
-/*REST Api's we have created:
-1. http://localhost:8000/api/v1/products/create
-2. http://localhost:8000/api/v1/products
-3. http://localhost:8000/api/v1/products/product/:id
-4. http://localhost:8000/api/v1/products/update/:id
-5. http://localhost:8000/api/v1/products/delete/:id
-*/
-
-
-
 export default router; 

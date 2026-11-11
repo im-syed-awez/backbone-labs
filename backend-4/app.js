@@ -14,7 +14,7 @@ app.use(express.json());
 // Using that routes, and import the router with the name of productRouter
 app.use("/api/v1/products", productRouter);
 
-/* How do the Api Routes look, Use any api testing tool and Don't forget to remove(:id) with the id):
+/* How do the Api Routes look, Use any api testing tool and Don't forget to remove(:id) with the orignal id):
 1. http://localhost:8000/api/v1/products/create
 2. http://localhost:8000/api/v1/products
 3. http://localhost:8000/api/v1/products/product/:id  
