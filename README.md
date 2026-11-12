@@ -8,6 +8,8 @@ Welcome to my backend development learning repository. This repo tracks my journ
 *   [backend-2](./backend-2/) — Intro to Express.js, API, REST-api, Basic Routing, and Env Management
 *   [backend-3](./backend-3/) — Intro to MVC (Model-View-Controller) and MongoDB Integration 
 *   [backend-4](./backend-4/) — Complete Product CRUD Operations
+*   [backend-5](./backend-5/) — Input Validation & Custom Error Handling
+
 
 
 ---
@@ -94,6 +96,26 @@ cd backend-4
 npm install
 npm run dev
 ```
+---
+### 5. Backend-5: Input Validation & Custom Error Handling
+Upgraded the existing product CRUD operations to validate user input and return clear custom error messages when required information is missing.
+
+#### Core Concepts Learned:
+*   **Input Validation:** Checking incoming request data (`req.body` and `req.params`) before interacting with the database to prevent incomplete or invalid records.
+*   **HTTP `400 Bad Request` Status:** Sending the standard client-side error status code alongside a descriptive JSON message (`success: false`) to tell the user exactly what went wrong.
+
+#### What I Did:
+*   **Validated Product Creation (`handleCreateProduct`):** Checked that `name`, `price`, `details`, and `category` are all provided before saving a new product.
+*   **Checked Single Product Lookups (`handleGetProductById`):** Verified that a product ID is present in the URL parameters before querying the database.
+*   **Guarded Product Updates (`handleUpdateById`):** Added checks to ensure both the target product ID and all updated field values are supplied before modifying data.
+*   **Protected Delete Requests (`handleDeleteById`):** Added an ID presence check before allowing a product deletion request to proceed.
+
+#### How to Run:
+*  Now you the commands to run.
+```
+---
+
+
 
 
 
