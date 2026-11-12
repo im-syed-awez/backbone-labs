@@ -111,7 +111,7 @@ Upgraded the existing product CRUD operations to validate user input and return 
 *   **Protected Delete Requests (`handleDeleteById`):** Added an ID presence check before allowing a product deletion request to proceed.
 
 #### How to Run:
-*  Now you the commands to run.
+*  Now you know the commands to run.
 ```
 ---
 
