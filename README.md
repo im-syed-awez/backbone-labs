@@ -114,8 +114,8 @@ Upgraded the existing product CRUD operations to validate user input and return 
 
 #### How to Run:
 *  Now you know the commands to run.
-```
 ---
+
 ### 6. Backend-6: Asynchronous Error Handling Wrapper
 Created a reusable utility function to automatically catch errors in asynchronous route handlers without writing repetitive `try/catch` blocks everywhere.
 
