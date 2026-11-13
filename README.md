@@ -9,6 +9,8 @@ Welcome to my backend development learning repository. This repo tracks my journ
 *   [backend-3](./backend-3/) — Intro to MVC (Model-View-Controller) and MongoDB Integration 
 *   [backend-4](./backend-4/) — Complete Product CRUD Operations
 *   [backend-5](./backend-5/) — Input Validation & Custom Error Handling
+*   [backend-6](./backend-6/) — Asynchronous Error Handling Wrapper
+
 
 
 
@@ -114,6 +116,20 @@ Upgraded the existing product CRUD operations to validate user input and return 
 *  Now you know the commands to run.
 ```
 ---
+### 6. Backend-6: Asynchronous Error Handling Wrapper
+Created a reusable utility function to automatically catch errors in asynchronous route handlers without writing repetitive `try/catch` blocks everywhere.
+
+#### Core Concepts Learned:
+*   **Higher-Order Functions:** A function that accepts another function as an argument and returns a new wrapped function.
+*   **`Promise.resolve().catch(next)`:** Executing async controller functions inside a promise so any unexpected runtime error is automatically caught and forwarded to Express's error-handling middleware via `next(err)`.
+
+#### What I Did:
+*   **Created Utils Folder (`utils/catchAsyncError.js`):** Built a reusable wrapper function that takes any async controller (`func`) and safely executes it with automatic error forwarding.
+*   **Eliminated Repetitive Code:** Replaced manual `try/catch` boilerplate inside controllers by wrapping route functions cleanly.
+---
+
+
+
 
 
 
